@@ -2002,7 +2002,12 @@ input, select, textarea {
 		}
 
 /* Section/Article */
-
+	nav{
+		border: 5px solid green;
+		margin: 0 0 60px 0;
+		display: flex;
+		justify-content: end;
+	}
 	section.special, article.special {
 		text-align: center;
 	}
