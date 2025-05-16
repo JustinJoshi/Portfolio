@@ -73,7 +73,7 @@ input, select, textarea {
 }
 
 /* Basic */
-
+	
 	html {
 		box-sizing: border-box;
 	}
@@ -2002,7 +2002,12 @@ input, select, textarea {
 		}
 
 /* Section/Article */
-
+	nav{
+		border: 5px solid green;
+		margin: 0 0 60px 0;
+		display: flex;
+		justify-content: end;
+	}
 	section.special, article.special {
 		text-align: center;
 	}
@@ -2038,10 +2043,10 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: rgba(144, 144, 144, 0.5);
+			background: #36C4C9;
 			content: '';
 			display: inline-block;
-			height: 1px;
+			height: 7px;
 			margin-top: 1.5em;
 			width: 6em;
 		}
@@ -2819,7 +2824,7 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: #fff;
+			background: rgb(39, 39, 39);
 		}
 
 		.main.style2 {
@@ -3202,7 +3207,9 @@ input, select, textarea {
 		#footer .icons {
 			margin: 0;
 		}
-
+		.copyright{
+			list-style: none;
+		}
 		#footer .copyright {
 			font-size: 0.8em;
 			list-style: none;
