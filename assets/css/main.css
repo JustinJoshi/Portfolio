@@ -2824,7 +2824,7 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: white;
+			background: rgb(39, 39, 39);
 		}
 
 		.main.style2 {
@@ -3207,7 +3207,9 @@ input, select, textarea {
 		#footer .icons {
 			margin: 0;
 		}
-
+		.copyright{
+			list-style: none;
+		}
 		#footer .copyright {
 			font-size: 0.8em;
 			list-style: none;
