@@ -1242,6 +1242,13 @@
 		}
 	}
 
+/* Images & Media */
+
+	img, video {
+		max-width: 100%;
+		height: auto;
+	}
+
 /* Devlog */
 
 	/* Devlog Preview Cards (home page) */

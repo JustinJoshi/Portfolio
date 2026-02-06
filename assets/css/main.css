@@ -2637,6 +2637,12 @@ body.is-preload #header:after {
   padding: 0;
 }
 
+/* Images & Media */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Devlog */
 /* Devlog Preview Cards (home page) */
 .devlog-cards {
