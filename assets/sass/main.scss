@@ -1242,6 +1242,180 @@
 		}
 	}
 
+/* Devlog */
+
+	/* Devlog Preview Cards (home page) */
+	.devlog-cards {
+		display: flex;
+		gap: 2em;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 1em;
+	}
+
+	.devlog-card {
+		background: _palette(border-bg);
+		border: solid 1px _palette(border);
+		border-radius: _size(border-radius);
+		padding: 2em;
+		flex: 1 1 280px;
+		max-width: 360px;
+		text-align: left;
+
+		time {
+			font-size: 0.85em;
+			color: _palette(fg-light);
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+		}
+
+		h3 {
+			margin: 0.5em 0 0.5em 0;
+
+			a {
+				border-bottom: none;
+			}
+		}
+
+		p {
+			font-size: 0.95em;
+			margin-bottom: 1.5em;
+		}
+	}
+
+	/* Devlog Listing Page */
+	.devlog-listing {
+		max-width: 48em;
+		margin: 0 auto;
+	}
+
+	.devlog-listing-item {
+		border-bottom: solid 1px _palette(border);
+		padding: 2em 0;
+		text-align: left;
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		header {
+			margin-bottom: 0.5em;
+
+			time {
+				font-size: 0.85em;
+				color: _palette(fg-light);
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				display: block;
+				margin-bottom: 0.25em;
+			}
+
+			h2 {
+				font-size: 1.5em;
+				margin: 0;
+
+				a {
+					border-bottom: none;
+				}
+			}
+		}
+
+		p {
+			margin: 0.75em 0 1em 0;
+		}
+	}
+
+	/* Devlog Tags */
+	.devlog-tags {
+		margin: 1em 0;
+	}
+
+	.devlog-tag {
+		display: inline-block;
+		background: _palette(border-bg);
+		border: solid 1px _palette(border);
+		border-radius: _size(border-radius);
+		font-size: 0.75em;
+		padding: 0.25em 0.75em;
+		margin: 0 0.5em 0.5em 0;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: _palette(fg-light);
+	}
+
+	/* Devlog Navigation */
+	.devlog-nav {
+		margin-bottom: 2em;
+
+		a {
+			font-size: 0.9em;
+			border-bottom: dotted 1px _palette(fg);
+		}
+
+		&.devlog-nav-bottom {
+			margin-top: 3em;
+			margin-bottom: 0;
+			padding-top: 2em;
+			border-top: solid 1px _palette(border);
+		}
+	}
+
+	/* Devlog Post Content */
+	.devlog-post {
+		max-width: 48em;
+		margin: 0 auto;
+		text-align: left;
+
+		h2 {
+			font-size: 1.5em;
+			margin-top: 1.5em;
+		}
+
+		h3 {
+			font-size: 1.25em;
+			margin-top: 1.25em;
+		}
+
+		ul, ol {
+			margin-left: 1em;
+		}
+
+		ul {
+			list-style: disc;
+		}
+
+		ol {
+			list-style: decimal;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		img {
+			max-width: 100%;
+			border-radius: _size(border-radius);
+			margin: 1em 0;
+		}
+
+		blockquote {
+			border-left: solid 4px _palette(accent3);
+			margin: 1.5em 0;
+			padding: 0.5em 0 0.5em 1.5em;
+			font-style: italic;
+			color: _palette(fg-light);
+		}
+	}
+
+	/* Devlog Header (reuses #header styling but shorter) */
+	.devlog-header {
+		@include padding(5em, 0, (0,0,_size(element-margin),0));
+	}
+
 /* XLarge */
 
 	@include breakpoint('<=xlarge') {
@@ -1325,6 +1499,17 @@
 /* Medium */
 
 	@include breakpoint('<=medium') {
+
+		/* Devlog */
+
+			.devlog-cards {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.devlog-card {
+				max-width: 100%;
+			}
 
 		/* List */
 

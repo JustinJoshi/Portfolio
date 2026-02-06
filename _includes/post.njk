@@ -1,0 +1,36 @@
+---
+layout: base.njk
+---
+
+	<!-- Post Header -->
+	<section id="header" class="devlog-header">
+		<div class="inner">
+			<span class="icon solid major fa-pencil-alt"></span>
+			<h1><strong>{{ title }}</strong></h1>
+			<time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time>
+		</div>
+	</section>
+
+	<!-- Post Content -->
+	<section class="main style1">
+		<div class="container">
+			<nav class="devlog-nav">
+				<a href="/devlog/">&larr; Back to Devlog</a>
+			</nav>
+			<article class="devlog-post">
+				{{ content | safe }}
+			</article>
+			{% if tags | length > 0 %}
+			<div class="devlog-tags">
+				{% for tag in tags %}
+					{% if tag !== "devlogPosts" %}
+					<span class="devlog-tag">{{ tag }}</span>
+					{% endif %}
+				{% endfor %}
+			</div>
+			{% endif %}
+			<nav class="devlog-nav devlog-nav-bottom">
+				<a href="/devlog/">&larr; Back to Devlog</a>
+			</nav>
+		</div>
+	</section>
