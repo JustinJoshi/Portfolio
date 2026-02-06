@@ -17,19 +17,10 @@ layout: base.njk
 			<nav class="devlog-nav">
 				<a href="/devlog/">&larr; Back to Devlog</a>
 			</nav>
-			<article class="devlog-post">
-				{{ content | safe }}
-			</article>
-			{% if tags | length > 0 %}
-			<div class="devlog-tags">
-				{% for tag in tags %}
-					{% if tag !== "devlogPosts" %}
-					<span class="devlog-tag">{{ tag }}</span>
-					{% endif %}
-				{% endfor %}
-			</div>
-			{% endif %}
-			<nav class="devlog-nav devlog-nav-bottom">
+		<article class="devlog-post">
+			{{ content | safe }}
+		</article>
+		<nav class="devlog-nav devlog-nav-bottom">
 				<a href="/devlog/">&larr; Back to Devlog</a>
 			</nav>
 		</div>

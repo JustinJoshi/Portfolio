@@ -26,14 +26,14 @@
 
 // Palette.
 	$palette: (
-		bg:					#fff,
-		fg:					#666,
-		fg-bold:			#555,
-		fg-light: 			#999,
-		border:				rgba(144,144,144,0.5),
-		border-bg:			rgba(144,144,144,0.075),
-		border2:			rgba(144,144,144,0.75),
-		border2-bg:			rgba(144,144,144,0.2),
+		bg:					#121220,
+		fg:					#b0b0c0,
+		fg-bold:			#d8d8e8,
+		fg-light: 			#7878a0,
+		border:				rgba(180,180,220,0.2),
+		border-bg:			rgba(180,180,220,0.06),
+		border2:			rgba(180,180,220,0.35),
+		border2-bg:			rgba(180,180,220,0.12),
 		accent1:			#c3e895,
 		accent2:			#8addaa,
 		accent3:			#6bd4c8,
@@ -48,7 +48,7 @@
 		accent6-alt:		desaturate(darken(#6b88e6, 15), 20),
 
 		dark: (
-			bg:				#666666,
+			bg:				#b0b0c0,
 			fg-bold:		#ffffff,
 			fg:				rgba(255,255,255,0.75),
 			fg-light:		rgba(255,255,255,0.5),

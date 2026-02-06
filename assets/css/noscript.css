@@ -4,6 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Page (override inline hide when JS is disabled) */
+
+	body.is-preload {
+		opacity: 1;
+	}
+
 /* Header */
 
 	body.is-preload #header .inner {

@@ -109,6 +109,7 @@
 
 	body {
 		background: _palette(bg);
+		@include vendor('transition', 'opacity 0.25s ease');
 
 		// Stops initial animations until page loads.
 			&.is-preload {
