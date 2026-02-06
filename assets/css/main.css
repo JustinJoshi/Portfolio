@@ -37,6 +37,10 @@ ol, ul {
   list-style: none;
 }
 
+.gif {
+  width: 100%;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -2283,6 +2287,12 @@ button:disabled,
 }
 .main.style1 {
   background: #fff;
+}
+.me {
+  width: 439px !important;
+  object-fit: cover;
+  height: 467px;
+  border-radius: 10px;
 }
 .main.style2 {
   background-color: #333;
